@@ -347,9 +347,10 @@
 
 
   <div>
-    <label for="fname">Name:</label>
+    <label for="fname">Digite seu nome para descobrir o segredo do PATO:</label>
     <br>
-    <input [(ngModel)]="name" (keyup)="keyup()">
+    <input [(ngModel)]="name">
+    <button  (click)="keyup()">Revelar segredo</button>
     <h3>{{result}}</h3>
   </div>
 
